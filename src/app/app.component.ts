@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { DataService } from 'sf-lib';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'spike-ng-cli';
+
+  constructor(
+    private service: DataService
+  ) {
+    this.service.getData().subscribe(console.log);
+  }
+
+
 }

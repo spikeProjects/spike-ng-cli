@@ -16,6 +16,14 @@
     "lib": [
       "es2017",
       "dom"
-    ]
+    ],
+    "paths": {
+      "sf-lib": [
+        "dist/sf-lib"
+      ],
+      "sf-lib/*": [
+        "dist/sf-lib/*"
+      ]
+    }
   }
 }
